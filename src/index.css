@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #e47628, #810909, #8e44ad, #3498db);
+  background-size: 500% 400%;
+  
+  animation: moveGradient 10s ease-in-out infinite;
+ 
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.to-do-list {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 80px;
+  font-weight: bold;
+  /* background-color:rgb(22, 98, 121); */
+}
+
+h1 {
+  font-size: 60px;
+}
+
+button {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  background-color: hwb(0 2% 7% / 0.774);
+}
+
+.add-button {
+  background-color: rgb(42, 230, 74);
+}
+
+.add-button:hover {
+  background-color: hwb(125 4% 28%);
+}
+
+input[type='text'] {
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px 20px;
+  border: 20px solid balck;
+  border-radius: 10px;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 38px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 182, 149);
+}
+
+.text {
+  flex-grow: 1;
+
+}
+
+.delete-button {
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
